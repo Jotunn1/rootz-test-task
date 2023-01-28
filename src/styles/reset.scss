@@ -85,6 +85,11 @@ ul {
 }
 
 input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
     -webkit-appearance: none;
-    border-radius: 0;
+    border: none;
+    outline: none;
 }

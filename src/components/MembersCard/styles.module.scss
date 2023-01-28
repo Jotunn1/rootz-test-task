@@ -1,0 +1,9 @@
+.membersCard {
+    width: 272px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+    background: url(../../assets/first-screen/card.png) center/contain no-repeat;
+}
