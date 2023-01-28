@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 import Logo from "../Logo";
 import Navigation from "../Navigation";
 import styles from "./styles.module.scss";
@@ -8,7 +9,7 @@ const Header = () => {
         <header className={styles.header}>
             <Logo />
             <Navigation />
-            <button>Apply</button>
+            <Button type={"white"} btnText={"Apply"} />
         </header>
     );
 };

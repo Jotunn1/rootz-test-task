@@ -1,5 +1,13 @@
 @import './reset.scss', './spacings.scss', './fonts.scss';
 
+$first-screen-bg: #F7F3F4;
+$primary-bg-color: #FFBD9E;
+$cta-btn-color: #F2726C;
+
+body {
+    background-color: $first-screen-bg;
+}
+
 .cta {
     cursor: pointer;
 }
