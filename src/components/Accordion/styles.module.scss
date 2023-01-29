@@ -1,0 +1,38 @@
+.accordion {
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+
+    >p {
+        padding-top: 32px;
+        transition-property: margin-bottom, height;
+        transition: .3s ease-in;
+    }
+
+    &.open>p {
+        margin-bottom: 16px;
+    }
+
+    &.closed>p {
+        margin-bottom: 0;
+    }
+
+    :global {
+        .row {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+
+            >span {
+                flex-shrink: 0;
+                display: grid;
+                place-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: var(--cta-btn-color);
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import FAQSection from "./components/sections/FAQSection";
 import FirstScreen from "./components/sections/FirstScreen";
 import GetStarted from "./components/sections/GetStarted";
 import TeamSection from "./components/sections/TeamSection";
@@ -11,6 +12,7 @@ const App = () => {
                 <FirstScreen />
                 <TeamSection />
                 <GetStarted />
+                <FAQSection />
             </div>
             {/* <Footer /> */}
         </div>
