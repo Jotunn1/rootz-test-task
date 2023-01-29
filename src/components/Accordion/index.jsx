@@ -9,7 +9,7 @@ const Accordion = ({ title, text, isOpenedFirstTime }) => {
 
     useEffect(() => {
         if (isOpenedFirstTime) setIsActive(true);
-    }, []);
+    }, [isOpenedFirstTime]);
 
     return (
         <div
