@@ -1,0 +1,59 @@
+.team {
+    :global {
+        .title-pair {
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+
+            >p {
+                text-align: center;
+                max-width: 352px;
+            }
+        }
+
+        .images-wrapper {
+            position: relative;
+            height: 368px;
+            margin-top: 12px;
+
+            img {
+                position: absolute;
+
+                &.image-1 {
+                    width: 28.8%;
+                    top: 0;
+                    left: 0;
+                }
+
+                &.image-2 {
+                    width: 29.8%;
+                    top: 30%;
+                    left: 35%;
+                }
+
+                &.image-3 {
+                    width: 24.6%;
+                    top: 0;
+                    right: 0;
+                }
+
+                &.line {
+                    width: 33.75%;
+                    z-index: -1;
+                }
+
+                &.line-1 {
+                    top: 7%;
+                    left: 17%;
+                }
+
+                &.line-2 {
+                    top: 41%;
+                    left: 54%;
+                }
+            }
+        }
+    }
+}
