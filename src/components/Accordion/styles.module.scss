@@ -24,7 +24,7 @@
             align-items: center;
             gap: 5px;
 
-            >span {
+            >button {
                 flex-shrink: 0;
                 display: grid;
                 place-content: center;
@@ -32,6 +32,17 @@
                 height: 40px;
                 border-radius: 50%;
                 background-color: var(--cta-btn-color);
+                transition-property: opacity, transform;
+                transition: .2s ease;
+                opacity: 0.9;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                &:active {
+                    transform: scale(1.02);
+                }
             }
         }
     }

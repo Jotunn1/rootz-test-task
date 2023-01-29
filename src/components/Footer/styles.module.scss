@@ -18,6 +18,14 @@
             >ul {
                 display: flex;
                 gap: 16px;
+
+                >a svg path {
+                    transition: fill .2s ease;
+                }
+
+                >a:hover svg path {
+                    fill: var(--cta-btn-color);
+                }
             }
         }
     }

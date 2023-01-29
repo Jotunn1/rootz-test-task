@@ -29,24 +29,12 @@ const Footer = () => {
                 <ul>
                     <a href="https://twitter.com/home">
                         <TwitterLogo />
-                        {/* <img
-                            src={require("../../assets/social-networks/twitter.png")}
-                            alt="twitter logo"
-                        /> */}
                     </a>
                     <a href="https://uk-ua.facebook.com/">
                         <FacebookLogo />
-                        {/* <img
-                            src={require("../../assets/social-networks/facebook.png")}
-                            alt="facebook logo"
-                        /> */}
                     </a>
                     <a href="https://www.linkedin.com/">
                         <LinkedInLogo />
-                        {/* <img
-                            src={require("../../assets/social-networks/linkedin.png")}
-                            alt="linkedin logo"
-                        /> */}
                     </a>
                 </ul>
             </div>

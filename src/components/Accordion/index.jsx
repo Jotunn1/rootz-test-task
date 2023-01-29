@@ -19,7 +19,10 @@ const Accordion = ({ title, text, isOpenedFirstTime }) => {
         >
             <div className="row" onClick={() => setIsActive(!isActive)}>
                 <h5 className="title-h5">{title}</h5>
-                <span> {isActive ? <Minus /> : <Plus />}</span>
+                <button className="cta">
+                    {" "}
+                    {isActive ? <Minus /> : <Plus />}
+                </button>
             </div>
 
             <p
