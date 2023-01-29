@@ -46,6 +46,15 @@
     opacity: 0.9;
 }
 
+.title-h6 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
 .text-t1 {
     font-family: 'Poppins';
     font-style: normal;
@@ -64,4 +73,14 @@
     line-height: 32px;
     color: #1E1A20;
     opacity: 0.9;
+}
+
+.text-t3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: #333333;
 }

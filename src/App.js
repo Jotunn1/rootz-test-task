@@ -3,6 +3,7 @@ import FAQSection from "./components/sections/FAQSection";
 import FirstScreen from "./components/sections/FirstScreen";
 import GetStarted from "./components/sections/GetStarted";
 import TeamSection from "./components/sections/TeamSection";
+import Footer from "./components/Footer";
 
 const App = () => {
     return (
@@ -13,8 +14,8 @@ const App = () => {
                 <TeamSection />
                 <GetStarted />
                 <FAQSection />
+                <Footer />
             </div>
-            {/* <Footer /> */}
         </div>
     );
 };

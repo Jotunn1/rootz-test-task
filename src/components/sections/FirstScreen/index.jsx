@@ -1,4 +1,4 @@
-import React from "react";
+
 import { ReactComponent as Headline } from "../../../assets/first-screen/headline.svg";
 import { ReactComponent as Parrot } from "../../../assets/first-screen/parrot.svg";
 import Input from "../../Input.jsx";
