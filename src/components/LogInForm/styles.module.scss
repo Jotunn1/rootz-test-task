@@ -1,0 +1,29 @@
+.logIn {
+    padding: 40px 55px;
+    background: var(--first-screen-bg);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    :global {
+        .inputs {
+            width: 100%;
+            margin: 24px 0 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        button {
+            width: 100%;
+        }
+
+        .leafs {
+            position: absolute;
+            top: -24px;
+            right: -29px;
+        }
+    }
+}
