@@ -30,11 +30,12 @@ const FAQSection = () => {
                 <Button type={"primary"} btnText={"Contact us"} />
             </div>
             <div className="right-side">
-                {questionsList.map((el) => (
+                {questionsList.map((el, index) => (
                     <Accordion
                         key={Math.random()}
                         title={el.question}
                         text={el.answer}
+                        isOpenedFirstTime={index === 0 ? true : false}
                     />
                 ))}
             </div>
