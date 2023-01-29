@@ -2,8 +2,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
-    min-height: 85vh;
-    // TODO fix to calc 100vg - var(--header-height)
+    min-height: calc(100vh - var(--header-height));
+    position: relative;
+
+    &::before {
+        content: '';
+        background-color: var(--first-screen-bg);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: calc(50% - var(--header-height));
+        left: 50%;
+        transform: translate(-50%, calc(-50% + var(--header-height)/2));
+        z-index: -1;
+    }
 
     :global {
 
@@ -23,14 +35,14 @@
             >:nth-child(1) {
                 aspect-ratio: 3/4;
                 width: 82%;
-                z-index: -1;
                 position: absolute;
-                top: -13%;
+                top: -7%;
                 right: -7%;
             }
 
             >:nth-child(2) {
                 position: absolute;
+                z-index: 1;
                 bottom: -9%;
                 left: 15%;
             }

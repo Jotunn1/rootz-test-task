@@ -1,11 +1,7 @@
-@import './reset.scss', './spacings.scss', './fonts.scss';
+@import './reset.scss', './variables.scss', './spacings.scss', './fonts.scss';
 
-$first-screen-bg: #F7F3F4;
-$primary-bg-color: #FFBD9E;
-$cta-btn-color: #F2726C;
-
-body {
-    background-color: $first-screen-bg;
+.App {
+    overflow-x: hidden;
 }
 
 .cta {

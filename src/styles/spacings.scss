@@ -1,9 +1,12 @@
 .App {
-    --side-spacing: 80px;
     padding: 0 var(--side-spacing);
 }
 
 .wrapper {
     max-width: 1120px;
     margin: 0 auto;
+}
+
+section:not(:last-of-type) {
+    margin-bottom: 192px;
 }
