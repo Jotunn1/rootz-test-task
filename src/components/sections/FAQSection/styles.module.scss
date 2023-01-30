@@ -4,17 +4,27 @@
     gap: 104px;
 
     :global {
-        .left-side {
-            >p {
-                margin: 40px 0 56px;
-                max-width: 420px;
-            }
+        .left-side>p {
+            margin: 40px 0 56px;
+            max-width: 420px;
         }
 
         .right-side {
             display: flex;
             flex-direction: column;
             gap: 32px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        grid-template-columns: 1fr;
+        gap: 48px;
+
+        :global {
+            .left-side>p {
+                margin: 20px 0 32px;
+                max-width: 312px;
+            }
         }
     }
 }

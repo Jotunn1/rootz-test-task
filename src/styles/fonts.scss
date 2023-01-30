@@ -15,6 +15,11 @@
     font-size: 32px;
     line-height: 56px;
     color: #222433;
+
+    @media screen and (max-width:480px) {
+        font-size: 28px;
+        line-height: 150%;
+    }
 }
 
 .title-h3 {
@@ -24,8 +29,6 @@
     font-size: 20px;
     line-height: 140%;
     color: #FFFFFF;
-
-
 }
 
 .title-h4 {
@@ -46,6 +49,11 @@
     line-height: 34px;
     color: #1E1A20;
     opacity: 0.9;
+
+    @media screen and (max-width:480px) {
+        font-size: 18px;
+        line-height: 28px;
+    }
 }
 
 .title-h6 {
@@ -69,6 +77,11 @@
     line-height: 32px;
     color: #000000;
     opacity: 0.8;
+
+    @media screen and (max-width:480px) {
+        font-size: 15px;
+        line-height: 175%;
+    }
 }
 
 .text-t2 {

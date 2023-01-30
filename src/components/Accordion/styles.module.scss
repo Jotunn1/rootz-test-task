@@ -5,8 +5,8 @@
     >p {
         padding-top: 32px;
         max-width: 90%;
-        transition-property: margin-bottom, height;
         transition: .3s ease-in;
+        transition-property: margin-bottom, height;
     }
 
     &.open>p {
@@ -44,6 +44,18 @@
                 &:active {
                     transform: scale(1.02);
                 }
+            }
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        >p {
+            max-width: 100%;
+        }
+
+        :global {
+            .row {
+                gap: 30px;
             }
         }
     }
