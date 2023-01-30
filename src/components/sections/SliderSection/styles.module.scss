@@ -116,7 +116,15 @@
         }
     }
 
-    @media screen and (max-width:550px) {
+    @media screen and (max-width:850px) {
+        :global {
+            .slider-card.swiper-slide-active {
+                padding: 80px 30px 0;
+            }
+        }
+    }
+
+    @media screen and (max-width:530px) {
         height: 485px;
 
         :global {
@@ -136,6 +144,7 @@
                     }
 
                     .image {
+                        top: 13%;
                         width: 38%;
                     }
                 }

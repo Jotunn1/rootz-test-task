@@ -16,10 +16,12 @@
         }
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width:850px) {
         grid-template-columns: 1fr;
         gap: 48px;
+    }
 
+    @media screen and (max-width: 480px) {
         :global {
             .left-side>p {
                 margin: 20px 0 32px;

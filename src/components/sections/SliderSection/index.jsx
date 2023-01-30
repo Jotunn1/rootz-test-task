@@ -53,7 +53,7 @@ const SliderSection = () => {
                     swiperRef.current = swiper;
                 }}
                 breakpoints={{
-                    550: {
+                    530: {
                         slidesPerView: 2,
                     },
                     1024: {
