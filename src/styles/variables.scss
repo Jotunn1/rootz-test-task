@@ -7,4 +7,12 @@ body {
 
 
     background-color: #fff;
+
+    @media screen and (max-width: 850px) {
+        --side-spacing: 30px;
+    }
+
+    @media screen and (max-width: 480px) {
+        --side-spacing: 18px;
+    }
 }

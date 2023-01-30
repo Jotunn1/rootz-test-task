@@ -19,6 +19,10 @@
 
     :global {
 
+        .left-side>svg {
+            width: 100%;
+        }
+
         .left-side {
             div {
                 max-width: 448px;
@@ -43,10 +47,9 @@
             >:nth-child(2) {
                 position: absolute;
                 z-index: 1;
-                bottom: -9%;
+                bottom: -4%;
                 left: 15%;
             }
         }
     }
-
 }
