@@ -6,27 +6,33 @@ const Input = ({ inputFor }) => {
     const isSearchInput = inputFor === "search";
 
     return (
-        <label className={`${styles.input} ${styles[inputFor]} cta`}>
+        <label
+            className={`${styles.input} ${
+                isSearchInput ? styles.search : null
+            } cta`}
+        >
             {isSearchInput ? (
                 <>
                     <Location />
                     <input
                         type="text"
                         name={inputFor}
-                        id=""
                         placeholder="Find the place to help"
-                        className="text-t1"
+                        className="text-t1 search"
                     />
+                    <span></span>
                     <Button btnText={"search"} type={"primary"} />
                 </>
             ) : (
-                <input
-                    type="text"
-                    name={inputFor}
-                    id=""
-                    placeholder={inputFor}
-                    className="text-t1"
-                />
+                <>
+                    <input
+                        type="text"
+                        name={inputFor}
+                        placeholder={inputFor}
+                        className="text-t1"
+                    />
+                    <span></span>
+                </>
             )}
         </label>
     );
