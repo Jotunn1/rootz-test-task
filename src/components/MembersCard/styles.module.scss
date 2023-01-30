@@ -6,4 +6,16 @@
     justify-content: space-between;
     padding: 32px;
     background: url(../../assets/first-screen/card.png) center/contain no-repeat;
+
+    @media screen and (max-width:850px) {
+        padding: 35px 29px;
+        transition: width, height .2s ease;
+        width: 216px;
+        height: 254px;
+
+        svg {
+            width: 33px;
+            height: 38px;
+        }
+    }
 }

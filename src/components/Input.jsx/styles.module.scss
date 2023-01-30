@@ -20,4 +20,8 @@
             color: #807C7C;
         }
     }
+
+    >svg {
+        flex-shrink: 0;
+    }
 }
