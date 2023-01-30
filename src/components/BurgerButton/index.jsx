@@ -5,7 +5,7 @@ const BurgerButton = ({ isMenuActive, setMenuActive }) => {
         <button
             className={`${styles.burger} ${
                 isMenuActive ? styles.cross : styles.default
-            }`}
+            } cta`}
             onClick={setMenuActive}
         >
             <div className="line top-line"></div>

@@ -1,9 +1,7 @@
-import styles from "./styles.module.scss";
-
 const Logo = () => {
     return (
         <svg
-            className={styles.logo}
+            className="logo cta"
             width="112"
             height="39"
             viewBox="0 0 112 39"
