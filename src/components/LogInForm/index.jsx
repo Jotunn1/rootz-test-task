@@ -1,5 +1,5 @@
 import Button from "../Button";
-import Input from "../Input.jsx";
+import Input from "../Input/index.jsx";
 import styles from "./styles.module.scss";
 
 const LogInForm = () => {

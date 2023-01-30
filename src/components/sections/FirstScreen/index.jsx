@@ -1,7 +1,7 @@
 
 import { ReactComponent as Headline } from "../../../assets/first-screen/headline.svg";
 import { ReactComponent as Parrot } from "../../../assets/first-screen/parrot.svg";
-import Input from "../../Input.jsx";
+import Input from "../../Input/index.jsx";
 import MembersCard from "../../MembersCard";
 import styles from "./styles.module.scss";
 

@@ -21,7 +21,7 @@ const Accordion = ({ title, text, isOpenedFirstTime }) => {
                 <h5 className="title-h5">{title}</h5>
                 <button className="cta">
                     {" "}
-                    {isActive ? <Minus /> : <Plus />}
+                    {isActive ? <Minus /> : <Plus className="plus" />}
                 </button>
             </div>
 
