@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
-import { ReactComponent as BurgerIcon } from "../../assets/burger-menu.svg";
 import { useEffect, useState } from "react";
 import Button from "../Button";
+import BurgerButton from "../BurgerButton";
 
 const MobileMenu = () => {
     const [isActive, setIsActive] = useState(false);
@@ -15,16 +15,15 @@ const MobileMenu = () => {
             : (body.style.overflow = "auto");
     }, [isActive]);
 
+    const toggleMenu = () => setIsActive(!isActive);
+
     return (
         <div
             className={`${styles.mobileMenu} ${
                 isActive ? styles.open : styles.closed
             }`}
         >
-            <button onClick={() => setIsActive(!isActive)}>
-                <BurgerIcon className="cta" />
-            </button>
-
+            <BurgerButton isMenuActive={isActive} setMenuActive={toggleMenu} />
             <div>
                 <nav>
                     <ul>

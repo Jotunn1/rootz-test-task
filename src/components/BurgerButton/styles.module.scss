@@ -1,0 +1,58 @@
+.burger {
+    width: 22px;
+    height: 17px;
+    position: relative;
+
+    :global {
+        .line {
+            width: 100%;
+            position: absolute;
+            right: 0;
+            background-color: #000000;
+            border-radius: 5px;
+            height: 3px;
+        }
+
+        .top-line,
+        .bottom-line {
+            width: 100%;
+            transition: .3s ease-in;
+            transition-property: top, transform;
+        }
+
+        .top-line {
+            top: 0;
+        }
+
+        .bottom-line {
+            bottom: 0;
+        }
+
+        .middle-line {
+            width: 80%;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: .3s ease-in;
+            transition-property: right, opacity;
+        }
+    }
+
+    &.cross {
+        :global {
+            .top-line {
+                top: 50%;
+                transform: rotate(45deg);
+            }
+
+            .middle-line {
+                opacity: 0;
+                right: -100%;
+            }
+
+            .bottom-line {
+                top: 50%;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
