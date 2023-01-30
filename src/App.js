@@ -4,6 +4,7 @@ import FirstScreen from "./components/sections/FirstScreen";
 import GetStarted from "./components/sections/GetStarted";
 import TeamSection from "./components/sections/TeamSection";
 import Footer from "./components/Footer";
+import SliderSection from "./components/sections/SliderSection";
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
                 <TeamSection />
                 <GetStarted />
                 <FAQSection />
+                <SliderSection />
                 <Footer />
             </div>
         </div>
