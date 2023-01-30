@@ -8,5 +8,5 @@
 }
 
 section:not(:last-of-type) {
-    margin-bottom: 192px;
+    margin-bottom: var(--section-btm-spacing);
 }

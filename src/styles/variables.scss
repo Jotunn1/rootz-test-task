@@ -4,7 +4,7 @@ body {
     --cta-btn-color: #F2726C;
     --header-height: 112px;
     --side-spacing: 80px;
-
+    --section-btm-spacing: 192px;
 
     background-color: #fff;
 
@@ -13,6 +13,7 @@ body {
     }
 
     @media screen and (max-width: 480px) {
+        --section-btm-spacing: 100px;
         --side-spacing: 18px;
     }
 }
