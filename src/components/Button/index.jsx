@@ -1,9 +1,12 @@
 import styles from "./styles.module.scss";
 
 const Button = ({ btnText, type }) => {
-
     return (
-        <button className={`${styles.button} ${styles[type]} cta`}>
+        <button
+            className={`${styles.button} ${styles[type]} ${
+                btnText === "search" ? styles.small : ""
+            } cta`}
+        >
             {btnText}
         </button>
     );

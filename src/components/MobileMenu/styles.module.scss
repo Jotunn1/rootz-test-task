@@ -26,6 +26,14 @@
             flex-direction: column;
             align-items: center;
             gap: 56px;
+
+            >li {
+                transition: font-weight .2s ease;
+
+                &:active {
+                    font-weight: 700;
+                }
+            }
         }
     }
 

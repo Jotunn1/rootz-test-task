@@ -1,11 +1,10 @@
-:local(.button) {
+.button {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
     text-align: center;
-    transition-property: opacity, transfrom;
-    transition: .2s ease;
+    transition: opacity, transfrom .2s ease;
 
     &.white {
         padding: 13px 48px;
@@ -32,5 +31,15 @@
 
     &:active {
         opacity: 0.7;
+    }
+
+    @media screen and (max-width:480px) {
+        &.primary {
+            font-size: 12px;
+        }
+
+        &.small {
+            padding: 16px;
+        }
     }
 }
