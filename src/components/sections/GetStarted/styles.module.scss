@@ -9,12 +9,26 @@
         width: 50%;
     }
 
-    :global {
-        .text-pair {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 40px;
+    >div:first-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    @media screen and (max-width:480px) {
+        margin: 0 -18px;
+        padding: 42px 18px 56px;
+        gap: 55px;
+        flex-direction: column;
+
+        >* {
+            width: 100%;
+        }
+
+        >div:first-of-type {
+            gap: 20px;
+            padding: 0 26px;
         }
     }
 }

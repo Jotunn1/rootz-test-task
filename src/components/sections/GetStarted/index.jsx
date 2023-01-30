@@ -1,11 +1,10 @@
-
 import LogInForm from "../../LogInForm";
 import styles from "./styles.module.scss";
 
 const GetStarted = () => {
     return (
         <section className={styles.getStarted}>
-            <div className="text-pair">
+            <div>
                 <h2 className="title-h1">Get started today!</h2>
                 <p className="text-t2">
                     Learn more about how you can save our planet's nature. From

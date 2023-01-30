@@ -26,4 +26,15 @@
             right: -29px;
         }
     }
+
+    @media screen and (max-width:480px) {
+        padding: 40px 24px;
+
+        :global {
+            .leafs {
+                top: -19px;
+                right: -21px;
+            }
+        }
+    }
 }
