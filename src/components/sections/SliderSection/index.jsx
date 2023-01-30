@@ -44,13 +44,22 @@ const SliderSection = () => {
     return (
         <section className={styles.slider}>
             <Swiper
-                slidesPerView={4}
+                slidesPerView={1}
                 centeredSlides={true}
-                spaceBetween={50}
+                spaceBetween={20}
                 loop={true}
                 onRealIndexChange={(e) => setRealIndex(e.realIndex)}
                 onBeforeInit={(swiper) => {
                     swiperRef.current = swiper;
+                }}
+                breakpoints={{
+                    550: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
                 }}
             >
                 {sliderInfo.map((el, index) => {
