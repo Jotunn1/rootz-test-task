@@ -27,13 +27,13 @@ const Footer = () => {
             <div className="social">
                 <h6 className="title-h3">Social media</h6>
                 <ul>
-                    <a href="https://twitter.com/home">
+                    <a href="https://twitter.com/home" target="_blank">
                         <TwitterLogo />
                     </a>
-                    <a href="https://uk-ua.facebook.com/">
+                    <a href="https://uk-ua.facebook.com/" target="_blank">
                         <FacebookLogo />
                     </a>
-                    <a href="https://www.linkedin.com/">
+                    <a href="https://www.linkedin.com/" target="_blank">
                         <LinkedInLogo />
                     </a>
                 </ul>
