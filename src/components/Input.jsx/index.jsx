@@ -18,7 +18,7 @@ const Input = ({ inputFor }) => {
                         type="text"
                         name={inputFor}
                         placeholder="Find the place to help"
-                        className="text-t1 search"
+                        className="text-t1 search cta"
                     />
                     <span></span>
                     <Button btnText={"search"} type={"primary"} />
@@ -29,7 +29,7 @@ const Input = ({ inputFor }) => {
                         type="text"
                         name={inputFor}
                         placeholder={inputFor}
-                        className="text-t1"
+                        className="text-t1 cta"
                     />
                     <span></span>
                 </>

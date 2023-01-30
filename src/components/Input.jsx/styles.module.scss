@@ -59,6 +59,7 @@
         width: 0;
         height: 2px;
         background-color: var(--input-focus-color);
-        transition: width, left 0.3s ease-in;
+        transition: 0.3s ease-in;
+        transition-property: width, left;
     }
 }

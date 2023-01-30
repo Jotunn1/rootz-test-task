@@ -4,7 +4,8 @@
     font-weight: 700;
     line-height: 140%;
     text-align: center;
-    transition: opacity, transfrom .2s ease;
+    transition: .2s ease;
+    transition-property: transform, opacity;
 
     &.white {
         padding: 13px 48px;
