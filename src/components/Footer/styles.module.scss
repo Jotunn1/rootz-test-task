@@ -29,4 +29,37 @@
             }
         }
     }
+
+    @media screen and (max-width: 480px) {
+        padding: 42px 12px;
+        gap: 32px;
+        flex-wrap: wrap;
+
+        >div {
+            &:first-of-type {
+                width: 100%;
+                gap: 1px;
+
+                p {
+                    display: inline;
+                }
+            }
+
+            &:nth-of-type(2) {
+                gap: 15px;
+
+                >div {
+                    max-width: 140px;
+                }
+            }
+
+            &:last-of-type {
+                gap: 19px;
+
+                >ul {
+                    gap: 13px;
+                }
+            }
+        }
+    }
 }
