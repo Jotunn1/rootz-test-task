@@ -8,7 +8,8 @@ const Accordion = ({ title, text, isOpenedFirstTime }) => {
     const collapsingText = useRef(null);
 
     useEffect(() => {
-        if (isOpenedFirstTime) setIsActive(true);
+        if (isOpenedFirstTime) setTimeout(() => setIsActive(true), 300);
+        // added setTimeout hack for first page loading, when browser didnt download fonts . It cause unproperly behavior of accordion because of paragraph text calculation with default font.
     }, [isOpenedFirstTime]);
 
     return (
