@@ -56,7 +56,7 @@ const SliderSection = () => {
                     530: {
                         slidesPerView: 2,
                     },
-                    1024: {
+                    1200: {
                         slidesPerView: 4,
                         spaceBetween: 40,
                     },
@@ -70,13 +70,13 @@ const SliderSection = () => {
                         >
                             <img
                                 src={require("../../../assets/slider/slider-card-bg.png")}
-                                alt=""
+                                alt="slider-bg"
                                 className="bg"
                             />
                             <img
                                 className="image"
                                 src={require(`../../../assets/slider/${index}.png`)}
-                                alt=""
+                                alt={el.title}
                             />
                             <h5 className="title-h5">{el.title}</h5>
                             <p className="text-t1">{el.subtitle}</p>
